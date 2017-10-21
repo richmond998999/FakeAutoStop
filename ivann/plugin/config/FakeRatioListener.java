@@ -46,7 +46,7 @@ public class FakeRatioListener implements DownloadManagerListener, UTTimerEventP
 			
 			for(Download download : downloads) {
 				int fakeShareRatio = download.getStats().getShareRatioFake();
-				int currDownloadState = download.getState();
+				
 				float fakeShareLimitFloat = new Float(config.getFake_ratio_limit());
 				int fakeShareLimit = (int) (fakeShareLimitFloat * 1000.00f);
 				
